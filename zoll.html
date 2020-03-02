@@ -1,0 +1,2274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .picture {
+            border: 1px solid black;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .name {
+            border: 1px solid black;
+            text-align: center;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .location {
+            text-align: center;
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .price {
+            text-align: center;
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+
+        .end_time {
+            text-align: center;
+            grid-column-start: 5;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .shipping {
+            text-align: center;
+            grid-column-start: 5;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+
+        .search {
+            text-align: center;
+            grid-column-start: 6;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .main {
+            width: 90%;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            text-align: center;
+            align-items: center;
+            grid-template-columns: 50px 20% 20% 20% 20% 20% 50px;
+            grid-template-rows: 100px 100px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>This is an example Email</h3>
+    <table style="width:70%">
+        <tr>
+            <td>Image</td>
+            <td>Name</td>
+            <td>Location</td>
+            <td>Price</td>
+            <td>Bids</td>
+            <td>End Date</td>
+            <td>Shipping</td>
+            <td>Google Search</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643691"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643691.jpg"></a></td>
+            <td>1 Ford Focus 1,5 Diesel Unfall</td>
+            <td>
+                <div>81245</div>
+                        <div>München</div>
+            </td>
+            <td>3.490,00 EUR</td>
+            <td>41 Gebote</td>
+            <td>Mo, 24.02.2020, 11:49 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Ford+Focus+1,5+Diesel+Unfall">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644604"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644604.jpg"></a></td>
+            <td>1 Videokonferenz Anlage Cisco-MX200</td>
+            <td>
+                <div>80331</div>
+                        <div>München</div>
+            </td>
+            <td>520,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 11:53 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Videokonferenz+Anlage+Cisco-MX200">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641131"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641131.jpg"></a></td>
+            <td>1 Gerätehaus</td>
+            <td>
+                <div>51399</div>
+                        <div>Burscheid</div>
+            </td>
+            <td>65,00 EUR</td>
+            <td>5 Gebote</td>
+            <td>Mo, 24.02.2020, 12:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Gerätehaus">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644000"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644000.jpg"></a></td>
+            <td>1 Bosch Stromerzeuger mit Hatz Dieselmotor</td>
+            <td>
+                <div>37671</div>
+                        <div>Höxter</div>
+            </td>
+            <td>764,00 EUR</td>
+            <td>31 Gebote</td>
+            <td>Mo, 24.02.2020, 12:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Bosch+Stromerzeuger+mit+Hatz+Dieselmotor">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643697"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643697.jpg"></a></td>
+            <td>1 Vespa Ape 190 Nicht fahrbereit</td>
+            <td>
+                <div>64342</div>
+                        <div>Seeheim-Jugenheim</div>
+            </td>
+            <td>1.009,00 EUR</td>
+            <td>21 Gebote</td>
+            <td>Mo, 24.02.2020, 12:26 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Vespa+Ape+190+Nicht+fahrbereit">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644051"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644051.jpg"></a></td>
+            <td>1 Anhänger Offener Kasten Flamingo Trail. X200</td>
+            <td>
+                <div>37176</div>
+                        <div>Nörten-Hardenberg</div>
+            </td>
+            <td>1.000,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 12:47 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Anhänger+Offener+Kasten+Flamingo+Trail.+X200">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=642302"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_642302.jpg"></a></td>
+            <td>1 Metabo Schleifbock DS 7207 D</td>
+            <td>
+                <div>88239</div>
+                        <div>Wangen im Allgäu</div>
+            </td>
+            <td>155,00 EUR</td>
+            <td>3 Gebote</td>
+            <td>Mo, 24.02.2020, 13:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Metabo+Schleifbock+DS+7207+D">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644769"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644769.jpg"></a></td>
+            <td>1 Agria 2400 mit Anhänger und Anbaugeräte</td>
+            <td>
+                <div>71034</div>
+                        <div>Böblingen</div>
+            </td>
+            <td>1.700,53 EUR</td>
+            <td>40 Gebote</td>
+            <td>Mo, 24.02.2020, 13:17 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Agria+2400+mit+Anhänger+und+Anbaugeräte">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643877"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643877.jpg"></a></td>
+            <td>1 Bandenrandfräse Electrostart</td>
+            <td>
+                <div>94481</div>
+                        <div>Grafenau</div>
+            </td>
+            <td>500,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 13:24 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Bandenrandfräse+Electrostart">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644279"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644279.jpg"></a></td>
+            <td>1 Stufen-Spannzangensatz für Boley-Drehmaschine</td>
+            <td>
+                <div>38116</div>
+                        <div>Braunschweig</div>
+            </td>
+            <td>161,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Mo, 24.02.2020, 13:32 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Stufen-Spannzangensatz+für+Boley-Drehmaschine">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644775"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644775.jpg"></a></td>
+            <td>1 Sauter Präzisionswaage Typ 457</td>
+            <td>
+                <div>38116</div>
+                        <div>Braunschweig</div>
+            </td>
+            <td>131,20 EUR</td>
+            <td>6 Gebote</td>
+            <td>Mo, 24.02.2020, 13:45 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Sauter+Präzisionswaage+Typ+457">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643270"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643270.jpg"></a></td>
+            <td>1 Mercedes-Benz Sprinter 315 CDI</td>
+            <td>
+                <div>73037</div>
+                        <div>Göppingen</div>
+            </td>
+            <td>4.650,00 EUR</td>
+            <td>27 Gebote</td>
+            <td>Mo, 24.02.2020, 13:59 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Mercedes-Benz+Sprinter+315+CDI">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=642313"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_642313.jpg"></a></td>
+            <td>1 Mercedes-Benz Unimog Typ 427 - U1400 mit Schneepflug Schmidt MF2.4</td>
+            <td>
+                <div>66978</div>
+                        <div>Clausen</div>
+            </td>
+            <td>15.950,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Mo, 24.02.2020, 14:11 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Mercedes-Benz+Unimog+Typ+427+-+U1400+mit+Schneepflug+Schmidt+MF2.4">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644601"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644601.jpg"></a></td>
+            <td>27 Schreibtische - König & Neurath</td>
+            <td>
+                <div>90478</div>
+                        <div>Nürnberg</div>
+            </td>
+            <td>309,00 EUR</td>
+            <td>18 Gebote</td>
+            <td>Mo, 24.02.2020, 11:49 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=27+Schreibtische+-+König+&+Neurath">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644605"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644605.jpg"></a></td>
+            <td>1 Cisco Tandberg TelePresence System 6000 MXP Codec</td>
+            <td>
+                <div>80331</div>
+                        <div>München</div>
+            </td>
+            <td>35,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 11:55 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Cisco+Tandberg+TelePresence+System+6000+MXP+Codec">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643547"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643547.jpg"></a></td>
+            <td>1 Volkswagen T4</td>
+            <td>
+                <div>08144</div>
+                        <div>Hirschfeld</div>
+            </td>
+            <td>1.051,00 EUR</td>
+            <td>21 Gebote</td>
+            <td>Mo, 24.02.2020, 12:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Volkswagen+T4">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641544"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641544.jpg"></a></td>
+            <td>2 Hitzeschutzanzüge (Excalor)</td>
+            <td>
+                <div>66822</div>
+                        <div>Lebach</div>
+            </td>
+            <td>32,00 EUR</td>
+            <td>2 Gebote</td>
+            <td>Mo, 24.02.2020, 12:08 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=2+Hitzeschutzanzüge+(Excalor)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644050"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644050.jpg"></a></td>
+            <td>1 Aufsitzmäher Etesia Hydro 124P HVHPX</td>
+            <td>
+                <div>37176</div>
+                        <div>Nörten-Hardenberg</div>
+            </td>
+            <td>8.500,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 12:40 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Aufsitzmäher+Etesia+Hydro+124P+HVHPX">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644101"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644101.jpg"></a></td>
+            <td>1 Dacia Logan</td>
+            <td>
+                <div>21224</div>
+                        <div>Rosengarten</div>
+            </td>
+            <td>1.650,00 EUR</td>
+            <td>30 Gebote</td>
+            <td>Mo, 24.02.2020, 12:54 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Dacia+Logan">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644411"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644411.jpg"></a></td>
+            <td>1 Mountainbike von Portosa 26-Zoll/21-Gang</td>
+            <td>
+                <div>65197</div>
+                        <div>Wiesbaden</div>
+            </td>
+            <td>12,00 EUR</td>
+            <td>3 Gebote</td>
+            <td>Mo, 24.02.2020, 13:15 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Mountainbike+von+Portosa+26-Zoll/21-Gang">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641718"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641718.jpg"></a></td>
+            <td>12 Flaschen Wodka"Stumbras"</td>
+            <td>
+                <div>14467</div>
+                        <div>Potsdam</div>
+            </td>
+            <td>78,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 13:21 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=12+Flaschen+Wodka" Stumbras"">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643857"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643857.jpg"></a></td>
+            <td>1 VW T5 2.0 TDI Kasten mittelhohes Dach</td>
+            <td>
+                <div>49090</div>
+                        <div>Osnabrück</div>
+            </td>
+            <td>8.750,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 13:30 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+VW+T5+2.0+TDI+Kasten+mittelhohes+Dach">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644076"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644076.jpg"></a></td>
+            <td>1 VW 3C (Passat Variant Comfortline) 4Motion</td>
+            <td>
+                <div>99097</div>
+                        <div>Erfurt</div>
+            </td>
+            <td>7.600,00 EUR</td>
+            <td>17 Gebote</td>
+            <td>Mo, 24.02.2020, 13:37 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+VW+3C+(Passat+Variant+Comfortline)+4Motion">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644089"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644089.jpg"></a></td>
+            <td>1 KLANN KL-0482-43 KA Arretierwerkzeug-Satz</td>
+            <td>
+                <div>39114</div>
+                        <div>Magdeburg</div>
+            </td>
+            <td>40,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 13:58 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+KLANN+KL-0482-43+KA+Arretierwerkzeug-Satz">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643859"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643859.jpg"></a></td>
+            <td>1 Daimlerchrysler Sprinter 308 D Offener Kasten</td>
+            <td>
+                <div>32756</div>
+                        <div>Detmold</div>
+            </td>
+            <td>2.605,00 EUR</td>
+            <td>6 Gebote</td>
+            <td>Mo, 24.02.2020, 14:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Daimlerchrysler+Sprinter+308+D+Offener+Kasten">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644470"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644470.jpg"></a></td>
+            <td>1 Starck SH2028 Brille mit Sehstärke Hand Made in Italy, Farbe 0001/Grau, Originalware</td>
+            <td>
+                <div>65197</div>
+                        <div>Wiesbaden</div>
+            </td>
+            <td>42,00 EUR</td>
+            <td>13 Gebote</td>
+            <td>Mo, 24.02.2020, 15:11 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Starck+SH2028+Brille+mit+Sehstärke+Hand+Made+in+Italy,+Farbe+0001/Grau,+Originalware">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641651"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641651.jpg"></a></td>
+            <td>1 Nikon AF-S NIKKOR 70-300mm 1:4,5 - 5,6 G</td>
+            <td>
+                <div>33104</div>
+                        <div>Paderborn</div>
+            </td>
+            <td>361,99 EUR</td>
+            <td>13 Gebote</td>
+            <td>Mo, 24.02.2020, 15:18 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Nikon+AF-S+NIKKOR+70-300mm+1:4,5+-+5,6+G">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641634"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641634.jpg"></a></td>
+            <td>1 Nikon D5100 digitale Spiegelreflexkamera mit 18-55 mm Objektiv</td>
+            <td>
+                <div>33104</div>
+                        <div>Paderborn</div>
+            </td>
+            <td>341,00 EUR</td>
+            <td>20 Gebote</td>
+            <td>Mo, 24.02.2020, 15:28 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Nikon+D5100+digitale+Spiegelreflexkamera+mit+18-55+mm+Objektiv">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641755"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641755.jpg"></a></td>
+            <td>1 Laserdrucker HP LaserJet P 2055dn</td>
+            <td>
+                <div>14467</div>
+                        <div>Potsdam</div>
+            </td>
+            <td>16,00 EUR</td>
+            <td>5 Gebote</td>
+            <td>Mo, 24.02.2020, 15:40 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Laserdrucker+HP+LaserJet+P+2055dn">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643590"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643590.jpg"></a></td>
+            <td>1 Stahl-Sicherheitstüre in durchschuss- und durchbruchhemmender Ausführung</td>
+            <td>
+                <div>80339</div>
+                        <div>München</div>
+            </td>
+            <td>500,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 17:12 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Stahl-Sicherheitstüre+in+durchschuss-+und+durchbruchhemmender+Ausführung">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644500"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644500.jpg"></a></td>
+            <td>1 Hemd LaMartina Stehkragen (blau); Größe L</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>115,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 17:40 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Stehkragen+(blau);+Größe+L">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644502"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644502.jpg"></a></td>
+            <td>1 Hemd LaMartina Stehkragen (blau); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>115,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 17:40 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Stehkragen+(blau);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644504"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644504.jpg"></a></td>
+            <td>1 Hemd LaMartina (hellblau gestreift); Größe M</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>110,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 17:55 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+(hellblau+gestreift);+Größe+M">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644718"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644718.jpg"></a></td>
+            <td>1 Lederjacke Alexander Leather Edwin Denim CO Größe 54</td>
+            <td>
+                <div>10559</div>
+                        <div>Berlin</div>
+            </td>
+            <td>300,00 EUR</td>
+            <td>18 Gebote</td>
+            <td>Mo, 24.02.2020, 18:00 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Lederjacke+Alexander+Leather+Edwin+Denim+CO+Größe+54">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644506"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644506.jpg"></a></td>
+            <td>1 Hemd LaMartina (hellblau gestreift); Größe L</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>110,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:00 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+(hellblau+gestreift);+Größe+L">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644720"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644720.jpg"></a></td>
+            <td>1 Kopfhörer "Sony MDR ZX770BN, Wireless</td>
+            <td>
+                <div>10559</div>
+                        <div>Berlin</div>
+            </td>
+            <td>80,00 EUR</td>
+            <td>8 Gebote</td>
+            <td>Mo, 24.02.2020, 18:01 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Kopfhörer+" Sony+MDR+ZX770BN,+Wireless">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644509"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644509.jpg"></a></td>
+            <td>1 Hemd LaMartina Polo (blau); Größe XXL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>100,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 18:05 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Polo+(blau);+Größe+XXL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643910"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643910.jpg"></a></td>
+            <td>1 Königskette viereckig 925er Silber vergoldet mit Punzierung</td>
+            <td>
+                <div>06110</div>
+                        <div>Halle (Saale)</div>
+            </td>
+            <td>210,00 EUR</td>
+            <td>24 Gebote</td>
+            <td>Mo, 24.02.2020, 18:10 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Königskette+viereckig+925er+Silber+vergoldet+mit+Punzierung">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645645"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645645.jpg"></a></td>
+            <td>1 Bosch 2-Gang-Bohrmaschine GBM 16-2 RE</td>
+            <td>
+                <div>26188</div>
+                        <div>Edewecht</div>
+            </td>
+            <td>25,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 15:13 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Bosch+2-Gang-Bohrmaschine+GBM+16-2+RE">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641748"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641748.jpg"></a></td>
+            <td>12 Flaschen Wodka"Stumbras"</td>
+            <td>
+                <div>14467</div>
+                        <div>Potsdam</div>
+            </td>
+            <td>78,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 15:19 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=12+Flaschen+Wodka" Stumbras"">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641665"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641665.jpg"></a></td>
+            <td>1 Nikon DX VR AF-S NIKKOR 55-200 mm 1:4-5,6 G ED</td>
+            <td>
+                <div>33104</div>
+                        <div>Paderborn</div>
+            </td>
+            <td>75,00 EUR</td>
+            <td>6 Gebote</td>
+            <td>Mo, 24.02.2020, 15:37 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Nikon+DX+VR+AF-S+NIKKOR+55-200+mm+1:4-5,6+G+ED">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641675"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641675.jpg"></a></td>
+            <td>1 Cullmann 3335 Dreibeinstativ mit Spezial-Neigekopf</td>
+            <td>
+                <div>33104</div>
+                        <div>Paderborn</div>
+            </td>
+            <td>14,00 EUR</td>
+            <td>6 Gebote</td>
+            <td>Mo, 24.02.2020, 15:56 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Cullmann+3335+Dreibeinstativ+mit+Spezial-Neigekopf">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644499"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644499.jpg"></a></td>
+            <td>1 Hemd LaMartina Stehkragen (blau); Größe M</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>115,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 17:40 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Stehkragen+(blau);+Größe+M">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644501"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644501.jpg"></a></td>
+            <td>1 Hemd LaMartina Stehkragen (blau); Größe L</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>115,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 17:40 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Stehkragen+(blau);+Größe+L">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644503"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644503.jpg"></a></td>
+            <td>1 Hemd LaMartina Stehkragen (blau); Größe XXL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>115,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 17:45 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Stehkragen+(blau);+Größe+XXL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643905"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643905.jpg"></a></td>
+            <td>1 Silberarmband asiatischer Drachen, 925 gestempelt</td>
+            <td>
+                <div>06110</div>
+                        <div>Halle (Saale)</div>
+            </td>
+            <td>80,98 EUR</td>
+            <td>21 Gebote</td>
+            <td>Mo, 24.02.2020, 18:00 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Silberarmband+asiatischer+Drachen,+925+gestempelt">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644505"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644505.jpg"></a></td>
+            <td>1 Hemd LaMartina (hellblau gestreift); Größe L</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>110,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:00 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+(hellblau+gestreift);+Größe+L">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644507"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644507.jpg"></a></td>
+            <td>1 Hemd LaMartina (hellblau gestreift); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>110,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:00 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+(hellblau+gestreift);+Größe+XL">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644508"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644508.jpg"></a></td>
+            <td>1 Hemd LaMartina Polo (blau); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>100,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:05 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Polo+(blau);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644510"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644510.jpg"></a></td>
+            <td>1 Hemd LaMartina Polo (rot); Größe M</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>85,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:05 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Polo+(rot);+Größe+M">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644511"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644511.jpg"></a></td>
+            <td>1 Hemd LaMartina Polo (lila); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>75,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:10 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Polo+(lila);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644513"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644513.jpg"></a></td>
+            <td>1 Hemd LaMartina Polo (braun); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>85,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:15 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Polo+(braun);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644515"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644515.jpg"></a></td>
+            <td>1 Steppweste LaMartina (rot); Größe L</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>145,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:20 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Steppweste+LaMartina+(rot);+Größe+L">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644517"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644517.jpg"></a></td>
+            <td>1 Steppweste LaMartina (rot); Größe XXL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>145,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:25 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Steppweste+LaMartina+(rot);+Größe+XXL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644519"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644519.jpg"></a></td>
+            <td>1 Steppweste LaMartina (blau); Größe XXL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>145,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:25 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Steppweste+LaMartina+(blau);+Größe+XXL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645090"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645090.jpg"></a></td>
+            <td>1 Server HP DL 380 G7</td>
+            <td>
+                <div>10117</div>
+                        <div>Berlin</div>
+            </td>
+            <td>110,00 EUR</td>
+            <td>5 Gebote</td>
+            <td>Mo, 24.02.2020, 19:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Server+HP+DL+380+G7">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643429"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643429.jpg"></a></td>
+            <td>3 Flaschen Weißwein, Weißer Burgunder 2015</td>
+            <td>
+                <div>10965</div>
+                        <div>Berlin</div>
+            </td>
+            <td>12,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 20:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=3+Flaschen+Weißwein,+Weißer+Burgunder+2015">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644097"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644097.jpg"></a></td>
+            <td>1 PKW-Anhänger, zweiachsig, Gesamtlänge: 9,20 m (mit Deichsel)</td>
+            <td>
+                <div>01099</div>
+                        <div>Dresden</div>
+            </td>
+            <td>1.950,00 EUR</td>
+            <td>27 Gebote</td>
+            <td>Mo, 24.02.2020, 20:00 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+PKW-Anhänger,+zweiachsig,+Gesamtlänge:+9,20+m+(mit+Deichsel)">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644137"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644137.jpg"></a></td>
+            <td>1 iPhone XS, mit 64GB, gold - mit Aktivierungssperre</td>
+            <td>
+                <div>20355</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>300,01 EUR</td>
+            <td>12 Gebote</td>
+            <td>Mo, 24.02.2020, 20:01 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+iPhone+XS,+mit+64GB,+gold+-+mit+Aktivierungssperre">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644154"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644154.jpg"></a></td>
+            <td>1 Smartphone „Samsung“ Galaxy J5, 16GB in schwarz mit Aktivierungssperre</td>
+            <td>
+                <div>20355</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>32,00 EUR</td>
+            <td>2 Gebote</td>
+            <td>Mo, 24.02.2020, 20:03 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Smartphone+„Samsung“+Galaxy+J5,+16GB++in+schwarz+mit+Aktivierungssperre">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643434"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643434.jpg"></a></td>
+            <td>1 Flasche Champagner, Pommery</td>
+            <td>
+                <div>10965</div>
+                        <div>Berlin</div>
+            </td>
+            <td>18,00 EUR</td>
+            <td>2 Gebote</td>
+            <td>Mo, 24.02.2020, 20:05 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Flasche+Champagner,+Pommery">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643464"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643464.jpg"></a></td>
+            <td>1 Flasche Champagner, H. Blin</td>
+            <td>
+                <div>10965</div>
+                        <div>Berlin</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 20:15 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Flasche+Champagner,+H.+Blin">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643953"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643953.jpg"></a></td>
+            <td>1 Zugeinrichtung (Anhängekupplung) mit Zugöse Fabrikat Ringfeder</td>
+            <td>
+                <div>96160</div>
+                        <div>Geiselwind</div>
+            </td>
+            <td>250,00 EUR</td>
+            <td>11 Gebote</td>
+            <td>Mo, 24.02.2020, 20:30 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Zugeinrichtung+(Anhängekupplung)+mit+Zugöse+Fabrikat+Ringfeder">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644512"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644512.jpg"></a></td>
+            <td>1 Hemd LaMartina Polo (braun); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>85,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:15 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+Polo+(braun);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644514"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644514.jpg"></a></td>
+            <td>1 Hemd LaMartina (braun); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>85,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:15 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Hemd+LaMartina+(braun);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644516"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644516.jpg"></a></td>
+            <td>1 Steppweste LaMartina (rot); Größe XL</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>145,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:25 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Steppweste+LaMartina+(rot);+Größe+XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644518"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644518.jpg"></a></td>
+            <td>1 Steppweste LaMartina (blau); Größe L</td>
+            <td>
+                <div>48455</div>
+                        <div>Bad Bentheim</div>
+            </td>
+            <td>145,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 18:25 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Steppweste+LaMartina+(blau);+Größe+L">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=638620"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_638620.jpg"></a></td>
+            <td>1 Wiesenmäher AS 28 2T</td>
+            <td>
+                <div>04509</div>
+                        <div>Delitzsch</div>
+            </td>
+            <td>600,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 19:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Wiesenmäher+AS+28+2T">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641041"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641041.jpg"></a></td>
+            <td>1 Labeldrucker DYMO LabelWriter 400 Modell 93494</td>
+            <td>
+                <div>18439</div>
+                        <div>Stralsund</div>
+            </td>
+            <td>51,00 EUR</td>
+            <td>18 Gebote</td>
+            <td>Mo, 24.02.2020, 20:00 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Labeldrucker+DYMO+LabelWriter+400+Modell+93494">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643761"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643761.jpg"></a></td>
+            <td>1 Comtoise Pendeluhr um 1820 Frankreich / Region Franche Comte</td>
+            <td>
+                <div>38102</div>
+                        <div>Braunschweig</div>
+            </td>
+            <td>910,00 EUR</td>
+            <td>23 Gebote</td>
+            <td>Mo, 24.02.2020, 20:00 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Comtoise+Pendeluhr+um+1820+Frankreich+/+Region+Franche+Comte">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644134"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644134.jpg"></a></td>
+            <td>1 iPhone 7, 128GB, in schwarz - mit Aktivierungssperre</td>
+            <td>
+                <div>20355</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>120,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Mo, 24.02.2020, 20:00 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+iPhone+7,+128GB,+in+schwarz+-+mit+Aktivierungssperre">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644148"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644148.jpg"></a></td>
+            <td>1 Smartphone „BQ Aquaris“ X5 Plus, 16GB in schwarz mit Aktivierungssperre</td>
+            <td>
+                <div>20355</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>30,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Mo, 24.02.2020, 20:02 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Smartphone+„BQ+Aquaris“+X5+Plus,+16GB++in+schwarz+mit+Aktivierungssperre">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644157"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644157.jpg"></a></td>
+            <td>1 Smartphone „Samsung“ Note 3, 32GB in schwarz</td>
+            <td>
+                <div>20355</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>67,77 EUR</td>
+            <td>5 Gebote</td>
+            <td>Mo, 24.02.2020, 20:04 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Smartphone+„Samsung“+Note+3,+32GB+in+schwarz">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643456"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643456.jpg"></a></td>
+            <td>1 Flasche Champagner, Moet&Chandon</td>
+            <td>
+                <div>10965</div>
+                        <div>Berlin</div>
+            </td>
+            <td>29,00 EUR</td>
+            <td>2 Gebote</td>
+            <td>Mo, 24.02.2020, 20:10 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Flasche+Champagner,+Moet&Chandon">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643491"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643491.jpg"></a></td>
+            <td>1 Kronleuchter, Korblüster, 4-flammig</td>
+            <td>
+                <div>10965</div>
+                        <div>Berlin</div>
+            </td>
+            <td>200,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 20:20 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Kronleuchter,+Korblüster,+4-flammig">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644673"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644673.jpg"></a></td>
+            <td>1 elektronisches Schlagzeug (E-Drum-Set) "Roland - Modul TD9"</td>
+            <td>
+                <div>01099</div>
+                        <div>Dresden</div>
+            </td>
+            <td>530,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Mo, 24.02.2020, 20:30 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+elektronisches+Schlagzeug+(E-Drum-Set)+"
+                    Roland+-+Modul+TD9"">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643731"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643731.jpg"></a></td>
+            <td>1 Halskette und 1 Armband 900/1000 Gold</td>
+            <td>
+                <div>95030</div>
+                        <div>Hof</div>
+            </td>
+            <td>2.399,55 EUR</td>
+            <td>18 Gebote</td>
+            <td>Di, 25.02.2020, 06:30 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Halskette+und+1+Armband+900/1000+Gold">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644417"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644417.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition ecoFlex BD16-7904</td>
+            <td>
+                <div>89077</div>
+                        <div>Ulm</div>
+            </td>
+            <td>9.128,00 EUR</td>
+            <td>3 Gebote</td>
+            <td>Di, 25.02.2020, 07:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition+ecoFlex++BD16-7904">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644106"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644106.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>122,00 EUR</td>
+            <td>10 Gebote</td>
+            <td>Di, 25.02.2020, 07:30 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644108"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644108.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>113,99 EUR</td>
+            <td>12 Gebote</td>
+            <td>Di, 25.02.2020, 07:31 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644110"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644110.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>125,00 EUR</td>
+            <td>10 Gebote</td>
+            <td>Di, 25.02.2020, 07:33 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644113"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644113.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>122,00 EUR</td>
+            <td>15 Gebote</td>
+            <td>Di, 25.02.2020, 07:35 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644116"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644116.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>113,99 EUR</td>
+            <td>10 Gebote</td>
+            <td>Di, 25.02.2020, 07:37 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641366"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641366.jpg"></a></td>
+            <td>1 Kaeser Kolbenkompressor AIRBOX 840 OIL.FREE</td>
+            <td>
+                <div>32351</div>
+                        <div>Stemwede</div>
+            </td>
+            <td>3.750,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 08:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Kaeser+Kolbenkompressor+AIRBOX+840+OIL.FREE">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643666"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643666.jpg"></a></td>
+            <td>7 Sachbücher RECHTE</td>
+            <td>
+                <div>4780</div>
+                        <div>St.Vith Belgien</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 08:00 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=7+Sachbücher+RECHTE">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644554"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644554.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition ecotec BD16-7886</td>
+            <td>
+                <div>94032</div>
+                        <div>Passau</div>
+            </td>
+            <td>9.100,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 08:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition+ecotec+BD16-7886">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644558"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644558.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition ecotec BD16-7887</td>
+            <td>
+                <div>94032</div>
+                        <div>Passau</div>
+            </td>
+            <td>7.650,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 08:15 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition+ecotec+BD16-7887">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644164"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644164.jpg"></a></td>
+            <td>1 Starrdeichselanhänger Brantner TA11045 / XXL</td>
+            <td>
+                <div>52441</div>
+                        <div>Linnich</div>
+            </td>
+            <td>3.800,00 EUR</td>
+            <td>3 Gebote</td>
+            <td>Di, 25.02.2020, 08:19 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Starrdeichselanhänger+Brantner+TA11045+/+XXL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644082"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644082.jpg"></a></td>
+            <td>1 Mercedes Benz Transporter 211 CDI DOKA Plane</td>
+            <td>
+                <div>96114</div>
+                        <div>Hirschaid</div>
+            </td>
+            <td>4.270,00 EUR</td>
+            <td>38 Gebote</td>
+            <td>Mo, 24.02.2020, 20:40 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Mercedes+Benz+Transporter+211+CDI+DOKA+Plane">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=642900"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_642900.jpg"></a></td>
+            <td>1 Johnson Absauganlage (defekt)</td>
+            <td>
+                <div>90768</div>
+                        <div>Fürth</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 07:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Johnson+Absauganlage+(defekt)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644426"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644426.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition BD16-7877</td>
+            <td>
+                <div>89077</div>
+                        <div>Ulm</div>
+            </td>
+            <td>10.550,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 07:15 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition++BD16-7877">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644441"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644441.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition BD16-7876</td>
+            <td>
+                <div>89077</div>
+                        <div>Ulm</div>
+            </td>
+            <td>8.200,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Di, 25.02.2020, 07:30 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition++BD16-7876">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644109"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644109.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>113,99 EUR</td>
+            <td>10 Gebote</td>
+            <td>Di, 25.02.2020, 07:32 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644111"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644111.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>136,00 EUR</td>
+            <td>14 Gebote</td>
+            <td>Di, 25.02.2020, 07:34 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644114"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644114.jpg"></a></td>
+            <td>1 Notebook "Hewlett-Packard" ProBook 650- G1- 15,6 Zoll (39,6 cm)</td>
+            <td>
+                <div>72760</div>
+                        <div>Reutlingen</div>
+            </td>
+            <td>113,99 EUR</td>
+            <td>11 Gebote</td>
+            <td>Di, 25.02.2020, 07:36 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+"
+                    Hewlett-Packard"+ProBook+650-+G1-++15,6+Zoll+(39,6+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644458"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644458.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition ecoFlex BD16-7875</td>
+            <td>
+                <div>89077</div>
+                        <div>Ulm</div>
+            </td>
+            <td>9.650,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 07:45 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition+ecoFlex++BD16-7875">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643312"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643312.jpg"></a></td>
+            <td>1 Aktenvernichter Ideal CC 3802</td>
+            <td>
+                <div>52072</div>
+                        <div>Aachen</div>
+            </td>
+            <td>92,00 EUR</td>
+            <td>5 Gebote</td>
+            <td>Di, 25.02.2020, 08:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Aktenvernichter+Ideal+CC+3802">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643748"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643748.jpg"></a></td>
+            <td>1 VW T5 Transporter mit Bertsche Leichtmüllverdichter</td>
+            <td>
+                <div>61476</div>
+                        <div>Kronberg im Taunus</div>
+            </td>
+            <td>3.500,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 08:00 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+VW+T5+Transporter+mit+Bertsche+Leichtmüllverdichter">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643318"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643318.jpg"></a></td>
+            <td>1 Aktenvernichter Ideal CC 3104</td>
+            <td>
+                <div>52072</div>
+                        <div>Aachen</div>
+            </td>
+            <td>117,00 EUR</td>
+            <td>3 Gebote</td>
+            <td>Di, 25.02.2020, 08:01 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Aktenvernichter+Ideal+CC+3104">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=640173"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_640173.jpg"></a></td>
+            <td>1 Industrie Schweißgerät Röwac Typ KGL 350-22</td>
+            <td>
+                <div>78467</div>
+                        <div>Konstanz</div>
+            </td>
+            <td>524,44 EUR</td>
+            <td>20 Gebote</td>
+            <td>Di, 25.02.2020, 08:16 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Industrie+Schweißgerät+Röwac+Typ+KGL+350-22">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644578"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644578.jpg"></a></td>
+            <td>1 VW T6 2.0 TDI Kombi - BD16-8217</td>
+            <td>
+                <div>15236</div>
+                        <div>Frankfurt (Oder)</div>
+            </td>
+            <td>26.750,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 08:30 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+VW+T6+2.0+TDI+Kombi+-+BD16-8217">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=642035"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_642035.jpg"></a></td>
+            <td>2 Vdo Fahrtenschreiber Dtco Tachograph Typ 1381</td>
+            <td>
+                <div>78467</div>
+                        <div>Konstanz</div>
+            </td>
+            <td>370,00 EUR</td>
+            <td>26 Gebote</td>
+            <td>Di, 25.02.2020, 08:39 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=2+Vdo+Fahrtenschreiber+Dtco+Tachograph+Typ+1381">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=640186"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_640186.jpg"></a></td>
+            <td>1 Haubenspülmaschine Hobart HX 30E Gastro Spülmaschine</td>
+            <td>
+                <div>78467</div>
+                        <div>Konstanz</div>
+            </td>
+            <td>465,10 EUR</td>
+            <td>16 Gebote</td>
+            <td>Di, 25.02.2020, 08:46 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Haubenspülmaschine+Hobart+HX+30E+Gastro+Spülmaschine">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=642126"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_642126.jpg"></a></td>
+            <td>36 Sack Einstreugranulat für Kunstrasenplatz</td>
+            <td>
+                <div>78467</div>
+                        <div>Konstanz</div>
+            </td>
+            <td>50,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 08:50 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=36+Sack+Einstreugranulat+für+Kunstrasenplatz">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645039"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645039.jpg"></a></td>
+            <td>1 IPAD Mini Modell A1455 incl. LAdekabel</td>
+            <td>
+                <div>73430</div>
+                        <div>Aalen</div>
+            </td>
+            <td>95,00 EUR</td>
+            <td>11 Gebote</td>
+            <td>Di, 25.02.2020, 08:50 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+IPAD+Mini+Modell+A1455+incl.+LAdekabel">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644433"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644433.jpg"></a></td>
+            <td>1 IBM Server "X3690X5"</td>
+            <td>
+                <div>65936</div>
+                        <div>Frankfurt am Main</div>
+            </td>
+            <td>260,00 EUR</td>
+            <td>9 Gebote</td>
+            <td>Di, 25.02.2020, 09:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+IBM+Server+" X3690X5"">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=640467"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_640467.jpg"></a></td>
+            <td>1 Ausdehnungsgefäß Reflex N</td>
+            <td>
+                <div>21337</div>
+                        <div>Lüneburg</div>
+            </td>
+            <td>23,00 EUR</td>
+            <td>4 Gebote</td>
+            <td>Di, 25.02.2020, 09:02 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Ausdehnungsgefäß+Reflex+N">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644633"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644633.jpg"></a></td>
+            <td>1 IBM Server "X3690X5"</td>
+            <td>
+                <div>53113</div>
+                        <div>Bonn</div>
+            </td>
+            <td>145,00 EUR</td>
+            <td>3 Gebote</td>
+            <td>Di, 25.02.2020, 09:10 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+IBM+Server+" X3690X5"">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644599"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644599.jpg"></a></td>
+            <td>1 VW Touran 1.2 TSI BMT Trendline BD16-8048</td>
+            <td>
+                <div>24116</div>
+                        <div>Kiel</div>
+            </td>
+            <td>15.650,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 09:15 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+VW+Touran+1.2+TSI+BMT+Trendline++BD16-8048">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644617"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644617.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition ecoFlex BD16-7917</td>
+            <td>
+                <div>15236</div>
+                        <div>Frankfurt (Oder)</div>
+            </td>
+            <td>9.450,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 09:45 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition+ecoFlex++BD16-7917">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645210"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645210.jpg"></a></td>
+            <td>5 Notebooks Dell Latitude E6420 14 Zoll 35cm</td>
+            <td>
+                <div>19053</div>
+                        <div>Schwerin</div>
+            </td>
+            <td>250,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 09:56 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=5+Notebooks+Dell+Latitude+E6420+14+Zoll+35cm">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644142"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644142.jpg"></a></td>
+            <td>1 PC Konvolut 18 PCs HP Compaq</td>
+            <td>
+                <div>76133</div>
+                        <div>Karlsruhe</div>
+            </td>
+            <td>260,00 EUR</td>
+            <td>2 Gebote</td>
+            <td>Di, 25.02.2020, 10:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+PC+Konvolut+18+PCs+HP+Compaq">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644933"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644933.jpg"></a></td>
+            <td>1 Notebook DELL Latitude E5540</td>
+            <td>
+                <div>94078</div>
+                        <div>Freyung</div>
+            </td>
+            <td>10,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 10:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Notebook+DELL+Latitude+E5540">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=640182"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_640182.jpg"></a></td>
+            <td>1 Gläserspülmaschine Hobart Typ GX-60</td>
+            <td>
+                <div>78467</div>
+                        <div>Konstanz</div>
+            </td>
+            <td>252,00 EUR</td>
+            <td>13 Gebote</td>
+            <td>Di, 25.02.2020, 08:36 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Gläserspülmaschine+Hobart+Typ+GX-60">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644583"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644583.jpg"></a></td>
+            <td>1 Opel Astra K Sports Tourer 1.4 Turbo BD16-8114</td>
+            <td>
+                <div>89077</div>
+                        <div>Ulm</div>
+            </td>
+            <td>13.200,00 EUR</td>
+            <td>5 Gebote</td>
+            <td>Di, 25.02.2020, 08:45 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Astra+K+Sports+Tourer+1.4+Turbo++BD16-8114">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644551"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644551.jpg"></a></td>
+            <td>1 Live Cam DLC10, Grundig</td>
+            <td>
+                <div>95100</div>
+                        <div>Selb</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 08:48 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Live+Cam+DLC10,+Grundig">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645028"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645028.jpg"></a></td>
+            <td>1 Smartphone Samsung Galaxy S8 schwarz incl. Ladekabel</td>
+            <td>
+                <div>73430</div>
+                        <div>Aalen</div>
+            </td>
+            <td>128,00 EUR</td>
+            <td>12 Gebote</td>
+            <td>Di, 25.02.2020, 08:50 Uhr</td>
+            <td>✔</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Smartphone+Samsung+Galaxy+S8+schwarz+incl.+Ladekabel">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644665"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644665.jpg"></a></td>
+            <td>1 Beamer Casio XJ-M250</td>
+            <td>
+                <div>95100</div>
+                        <div>Selb</div>
+            </td>
+            <td>40,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 08:55 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Beamer+Casio+XJ-M250">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645088"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645088.jpg"></a></td>
+            <td>1 VW Touran 2.0 TDI, Automatik, Batterie defekt, Rostansatz Bremsanlage VA und HA</td>
+            <td>
+                <div>26129</div>
+                        <div>Oldenburg</div>
+            </td>
+            <td>1.050,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Di, 25.02.2020, 09:00 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+VW+Touran+2.0+TDI,+Automatik,+Batterie+defekt,+Rostansatz+Bremsanlage+VA+und+HA">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644555"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644555.jpg"></a></td>
+            <td>4 HP Tintenpatronen 932XL und 933XL</td>
+            <td>
+                <div>88709</div>
+                        <div>Hagnau am Bodensee</div>
+            </td>
+            <td>25,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 09:05 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=4+HP+Tintenpatronen+932XL+und+933XL">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=641272"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_641272.jpg"></a></td>
+            <td>1 Hochleistungslüfter Fa. Leader Typ 0554 "defekt"</td>
+            <td>
+                <div>51377</div>
+                        <div>Leverkusen</div>
+            </td>
+            <td>50,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 09:11 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Hochleistungslüfter+Fa.+Leader+Typ+0554+" defekt"">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644602"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644602.jpg"></a></td>
+            <td>1 Opel Corsa 1.0 Turbo Edition ecoFlex BD16-7951</td>
+            <td>
+                <div>15236</div>
+                        <div>Frankfurt (Oder)</div>
+            </td>
+            <td>9.600,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 09:30 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Opel+Corsa++1.0+Turbo+Edition+ecoFlex++BD16-7951">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644355"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644355.jpg"></a></td>
+            <td>1 Herrenarmbanduhr Breitling Chronomat</td>
+            <td>
+                <div>33607</div>
+                        <div>Bielefeld</div>
+            </td>
+            <td>995,00 EUR</td>
+            <td>15 Gebote</td>
+            <td>Di, 25.02.2020, 09:51 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Herrenarmbanduhr+Breitling+Chronomat">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643051"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643051.jpg"></a></td>
+            <td>1 Tischbohrmaschine IXION Typ BST 13 N ST mit Tisch</td>
+            <td>
+                <div>75365</div>
+                        <div>Calw</div>
+            </td>
+            <td>220,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Di, 25.02.2020, 09:59 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Tischbohrmaschine+IXION+Typ+BST+13+N+ST+mit+Tisch">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644812"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644812.jpg"></a></td>
+            <td>1 PKW Anhänger Böckmann HB 1 Offener Kasten</td>
+            <td>
+                <div>93309</div>
+                        <div>Kelheim</div>
+            </td>
+            <td>200,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 10:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+PKW+Anhänger++Böckmann+HB+1+Offener+Kasten">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644973"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644973.jpg"></a></td>
+            <td>1 BMW 116i</td>
+            <td>
+                <div>38106</div>
+                        <div>Braunschweig</div>
+            </td>
+            <td>4.950,00 EUR</td>
+            <td>14 Gebote</td>
+            <td>Di, 25.02.2020, 10:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+BMW+116i">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643053"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643053.jpg"></a></td>
+            <td>1 Stihl Motorsäge Typ: MSE 190 C mit Zubehör</td>
+            <td>
+                <div>23701</div>
+                        <div>Eutin</div>
+            </td>
+            <td>200,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 10:12 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Stihl+Motorsäge+Typ:+MSE+190+C+mit+Zubehör">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644901"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644901.jpg"></a></td>
+            <td>1 BIZERBA Aufschnittmaschine VS 12 D-V</td>
+            <td>
+                <div>83250</div>
+                        <div>Marquartstein</div>
+            </td>
+            <td>505,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Di, 25.02.2020, 10:30 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+BIZERBA+Aufschnittmaschine+VS+12+D-V">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644223"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644223.jpg"></a></td>
+            <td>1 Schreibtisch der Firma ERGO</td>
+            <td>
+                <div>53179</div>
+                        <div>Bonn</div>
+            </td>
+            <td>11,00 EUR</td>
+            <td>2 Gebote</td>
+            <td>Di, 25.02.2020, 10:54 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Schreibtisch+der+Firma+ERGO">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644281"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644281.jpg"></a></td>
+            <td>1 Anlage ca. 400 m² Vakuumröhrenkollektoren Ritter XL Solar</td>
+            <td>
+                <div>76133</div>
+                        <div>Karlsruhe</div>
+            </td>
+            <td>10.000,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 11:00 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Anlage+ca.+400+m²+Vakuumröhrenkollektoren+Ritter+XL+Solar">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644372"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644372.jpg"></a></td>
+            <td>1 Konvolut Datenkassetten und CDs</td>
+            <td>
+                <div>79104</div>
+                        <div>Freiburg im Breisgau</div>
+            </td>
+            <td>110,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 11:03 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=1+Konvolut+Datenkassetten+und+CDs">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645254"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645254.jpg"></a></td>
+            <td>30 Cisco 886 VDSL/ADSL Router</td>
+            <td>
+                <div>53175</div>
+                        <div>Bonn</div>
+            </td>
+            <td>3.000,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 11:08 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=30+Cisco+886+VDSL/ADSL+Router">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644238"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644238.jpg"></a></td>
+            <td>1 Schreibtisch der Firma Steelcase</td>
+            <td>
+                <div>53179</div>
+                        <div>Bonn</div>
+            </td>
+            <td>80,00 EUR</td>
+            <td>10 Gebote</td>
+            <td>Di, 25.02.2020, 11:23 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Schreibtisch+der+Firma+Steelcase">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643864"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643864.jpg"></a></td>
+            <td>1 gr.Büroschreibtisch Echtholz Furniert von Fortschritt</td>
+            <td>
+                <div>53123</div>
+                        <div>Bonn</div>
+            </td>
+            <td>180,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 12:51 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+gr.Büroschreibtisch+Echtholz+Furniert+von+Fortschritt">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643867"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643867.jpg"></a></td>
+            <td>3 Kabelführungsketten für Schreibtische</td>
+            <td>
+                <div>53123</div>
+                        <div>Bonn</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 12:56 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=3+Kabelführungsketten+für+Schreibtische">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643056"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643056.jpg"></a></td>
+            <td>1 Stoßmaschine Klopp Typ 300</td>
+            <td>
+                <div>75365</div>
+                        <div>Calw</div>
+            </td>
+            <td>130,00 EUR</td>
+            <td>4 Gebote</td>
+            <td>Di, 25.02.2020, 13:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Stoßmaschine+Klopp+Typ+300">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644655"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644655.jpg"></a></td>
+            <td>1 Außenborder Yamaha F 40 B mit Halterung und Transportgestell</td>
+            <td>
+                <div>26188</div>
+                        <div>Edewecht</div>
+            </td>
+            <td>220,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Di, 25.02.2020, 13:32 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Außenborder+Yamaha+F+40+B+mit+Halterung+und+Transportgestell">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=645112"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_645112.jpg"></a></td>
+            <td>1 Spritzenpumpe Fresenius Pilot A2</td>
+            <td>
+                <div>58332</div>
+                        <div>Schwelm</div>
+            </td>
+            <td>50,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 14:45 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Spritzenpumpe+Fresenius+Pilot+A2">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644763"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644763.jpg"></a></td>
+            <td>1 Sharp UHD-LCD TV Gerät 65" (165 cm)</td>
+            <td>
+                <div>44141</div>
+                        <div>Dortmund</div>
+            </td>
+            <td>300,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 10:01 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Sharp+UHD-LCD+TV+Gerät+65" +(165+cm)">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644029"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644029.jpg"></a></td>
+            <td>1 Stromaggregat Bosch G2400</td>
+            <td>
+                <div>48529</div>
+                        <div>Nordhorn</div>
+            </td>
+            <td>37,00 EUR</td>
+            <td>7 Gebote</td>
+            <td>Di, 25.02.2020, 10:15 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Stromaggregat+Bosch+G2400">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644213"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644213.jpg"></a></td>
+            <td>1 Lkw Daimler Sprinter 516 CDI mit Kipper und Plane</td>
+            <td>
+                <div>20537</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>4.161,00 EUR</td>
+            <td>9 Gebote</td>
+            <td>Di, 25.02.2020, 10:35 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Lkw+Daimler+Sprinter+516+CDI+mit+Kipper+und+Plane">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643678"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643678.jpg"></a></td>
+            <td>1 Porsche 911 Carrera, Baureihe 993</td>
+            <td>
+                <div>46446</div>
+                        <div>Emmerich am Rhein</div>
+            </td>
+            <td>39.001,00 EUR</td>
+            <td>93 Gebote</td>
+            <td>Di, 25.02.2020, 11:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Porsche+911+Carrera,+Baureihe+993">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644343"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644343.jpg"></a></td>
+            <td>1 Mercedes Sprinter 315 CDI</td>
+            <td>
+                <div>76227</div>
+                        <div>Karlsruhe</div>
+            </td>
+            <td>3.050,00 EUR</td>
+            <td>13 Gebote</td>
+            <td>Di, 25.02.2020, 11:00 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Mercedes+Sprinter+315+CDI">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644232"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644232.jpg"></a></td>
+            <td>2 Halsketten</td>
+            <td>
+                <div>29221</div>
+                        <div>Celle</div>
+            </td>
+            <td>55,00 EUR</td>
+            <td>14 Gebote</td>
+            <td>Di, 25.02.2020, 11:05 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=2+Halsketten">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644234"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644234.jpg"></a></td>
+            <td>1 Lkw Müllwagen 2629 L Econic, 3 Achser, Aufbau Faun Rotopress 522L, Schüttung Zöller Delta Premium 2301
+            </td>
+            <td>
+                <div>22525</div>
+                        <div>Hamburg</div>
+            </td>
+            <td>6.560,00 EUR</td>
+            <td>14 Gebote</td>
+            <td>Di, 25.02.2020, 11:11 Uhr</td>
+            <td>❌</td>
+            <td><a
+                    href="https://www.google.com/search?q=1+Lkw+Müllwagen+2629+L+Econic,+3+Achser,+Aufbau+Faun+Rotopress+522L,+Schüttung+Zöller+Delta+Premium+2301">Search</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643501"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643501.jpg"></a></td>
+            <td>4 Lexmark C534 Toner Kartuschen, gelb und blau</td>
+            <td>
+                <div>39114</div>
+                        <div>Magdeburg</div>
+            </td>
+            <td>50,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 11:41 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=4+Lexmark+C534+Toner+Kartuschen,+gelb+und+blau">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643865"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643865.jpg"></a></td>
+            <td>3 Kabelführungsketten für Schreibtische</td>
+            <td>
+                <div>53123</div>
+                        <div>Bonn</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>1 Gebot</td>
+            <td>Di, 25.02.2020, 12:54 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=3+Kabelführungsketten+für+Schreibtische">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643868"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643868.jpg"></a></td>
+            <td>3 Kabelführungsketten für Schreibtische</td>
+            <td>
+                <div>53123</div>
+                        <div>Bonn</div>
+            </td>
+            <td>20,00 EUR</td>
+            <td>0 Gebote</td>
+            <td>Di, 25.02.2020, 12:57 Uhr</td>
+            <td>✔</td>
+            <td><a href="https://www.google.com/search?q=3+Kabelführungsketten+für+Schreibtische">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=644408"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_644408.jpg"></a></td>
+            <td>1 Suzuki Grand Vitara</td>
+            <td>
+                <div>94518</div>
+                        <div>Spiegelau</div>
+            </td>
+            <td>2.308,00 EUR</td>
+            <td>35 Gebote</td>
+            <td>Di, 25.02.2020, 13:10 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Suzuki+Grand+Vitara">Search</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.zoll-auktion.de/auktion/auktion.php?id=643549"><img
+                        src="https://www.zoll-auktion.de//auktion/daten/bilder_auktionen/t_643549.jpg"></a></td>
+            <td>1 Anhängesprühgerat NI 1000 Querstromgebläse</td>
+            <td>
+                <div>70599</div>
+                        <div>Stuttgart</div>
+            </td>
+            <td>310,00 EUR</td>
+            <td>4 Gebote</td>
+            <td>Di, 25.02.2020, 14:06 Uhr</td>
+            <td>❌</td>
+            <td><a href="https://www.google.com/search?q=1+Anhängesprühgerat+NI+1000+Querstromgebläse">Search</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
